@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="记录一些css习惯">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css规范">
+<meta property="og:url" content="http://yoursite.com/2019/05/15/css规范/index.html">
+<meta property="og:site_name" content="三点水">
+<meta property="og:description" content="记录一些css习惯">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-06-04T06:53:44.223Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="css规范">
+<meta name="twitter:description" content="记录一些css习惯">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/05/15/css规范/">
+
+
+
+
+
+  <title>css规范 | 三点水</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">三点水</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">记录</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/15/css规范/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sandianshui">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="三点水">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">css规范</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-15T09:26:32+08:00">
+                2019-05-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>记录一些css习惯<br> <a id="more"></a></p>
+<h2 id="一些约定语法"><a href="#一些约定语法" class="headerlink" title="一些约定语法"></a>一些约定语法</h2><ul>
+<li>使用两个空格代表Tab      --保证所有环境下一致的展现</li>
+<li>选择器分组，将单独的选择器放在一行。</li>
+<li>每个声明块的左花括号前面添加一个空格，声明块的右花括号单独成行 --代码易读性。</li>
+<li>每个属性名与之后的<code>:</code>之间不允许有空格。</li>
+<li>每个声明的语句 <code>：</code>后面应该插入一个空格。</li>
+<li>每一个声明单独占一行，-- 获得准确的错误报告。</li>
+<li>每一行不得超过<strong>120</strong>个字符。-- 除非单行不可分割，例如URL超长。</li>
+<li>声明语句都以分号结尾，最后的一个分号是可选的，但是省略容易出错。</li>
+<li>以逗号分隔的属性值，没个逗号后面应该插入空格。</li>
+<li>不要在<code>rgb()</code>,<code>rgba()</code>,<code>hsla()</code>或者<code>rect()</code>值的<strong>内部</strong>的逗号后面插入空格，利于从多个属性值（既加逗号也加空格）中区分多个颜色值。</li>
+<li>属性值或颜色参数，省略小于1的小数前面的0（例如： <code>.5px</code>代替 <code>0.5px</code>）。</li>
+<li>十六进制值应该全部小写，例如：<code>#fff</code>。扫描文档的时候小写字符更容易分辨，并且尽量用简写的形式，例如：<code>#fff</code>代替<code>#ffffff</code>。</li>
+<li>选择器中的属性添加双引号，例如 <code>input[type=&quot;text&quot;]</code>,代码的一致性。<br>-设置长度单位时 0值不设置单位。</li>
+<li><p>2D位置，必须给出水平和垂直方向的位置，在只设置一个方向的值的时另一个方向的值被解析为center，避免理解上的困扰，应同时给出两个方向的值。例如：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/* good */</span><br><span class="line">body &#123;</span><br><span class="line">    background-postion: center top; /*50% 0%*/</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/*bad*/</span><br><span class="line">body &#123;</span><br><span class="line">    background-postion:top; /*0% 0%*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><ul>
+<li><code>font-family</code>属性中的字体族名称应使用字体的英文<code>Family Name</code>，其中有空格，需放置在引号中。</li>
+<li><code>font-family</code>按[英文字体在前，中文字体在后]，[效果佳 (质量高/更能满足需求)的字体在前、效果一般的字体在后]顺序编写，最后必须指定一个通用字体族( serif / sans-serif )。</li>
+<li><code>font-family</code>不区分大小写，但是在同一个项目中，大小写应该一致.</li>
+<li>需要在Windws平台显示的中文内容，字号应该不小于<code>12px</code>。</li>
+<li>需要Windows平台显示中文内容，不要使用除<code>normal</code>意外的<code>font-style</code>,其他平台也是谨慎使用。</li>
+<li><code>font-weight</code>属性使用数值方式描述。</li>
+<li><p><code>line-height</code>定义文本段落时，使用数值。<br>  将<code>line-height</code>，设置为数值，浏览器会基于当前元素设置的 font-size进行再次计算。在不同字号的文本段落组合中，能达到较为舒适的行间间隔效果，避免在每个设置了 font-size 都需要设置 line-height。</p>
+<p>  当 line-height 用于控制垂直居中时，还是应该设置成与容器高度一致</p>
+</li>
+</ul>
+<h2 id="声明顺序"><a href="#声明顺序" class="headerlink" title="声明顺序"></a>声明顺序</h2><p>属性的声明顺序如下：</p>
+<ol>
+<li>Postioning (布局方式，位置)</li>
+<li>Box model (尺寸)</li>
+<li>Typographic (文本相关)</li>
+<li>Visual (视觉效果)</li>
+</ol>
+<p>第一个Postioning可以从正常文档流中移除元素，而且能覆盖盒模型的一些样式，第二个box model 盒模型决定了租家的尺寸和位置。</p>
+<p>而之后的字体设置和视觉相关属性的是影响内部的所以排在后面。</p>
+<ul>
+<li>Pormatting 相关属性：<code>postion</code>/<code>top</code>/<code>right</code>/<code>bottom</code>/<code>left</code>/<code>float</code>/<code>diaplay</code>/<code>overflow</code>等。</li>
+<li>Box Model 相关属性：<code>border</code>/<code>margin</code>/<code>padding</code>/<code>width</code>/<code>height</code>等。</li>
+<li>Typographic 相关属性：<code>font</code>/<code>line-height</code>/<code>text-align</code>/<code>word-wrap</code>等。</li>
+<li>Visual相关属性： <code>background</code>/<code>color</code>/<code>transtion</code>/<code>list-style</code>等。<h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3>通过伪类设置clear或者出发BFC的方式进行<code>clearfix</code>,避免增加空标签的方式。<br>触发BFC方式：</li>
+<li>float非none</li>
+<li>position 非 static</li>
+<li>overflow 非 visible<h2 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h2>将z-index进行分层，对文档流外绝对定位元素的视觉层级关系进行管理。</li>
+</ul>
+<h3 id="url"><a href="#url" class="headerlink" title="url()"></a>url()</h3><ul>
+<li><p><code>url()</code>函数中的路径不加引号,例如:</p>
+  <figure class="highlight plain"><figcaption><span>&#123; url(bg.png); &#125; ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- `url()`函数中的绝对路径可省去协议名，例如：</span><br></pre></td></tr></table></figure>
+<p>  body { background:url(//baidu.com/img/bg.png) no-repeat 0 0;}</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 不要使用`@import`</span><br><span class="line"></span><br><span class="line">1. 使用多个`&lt;link&gt;`标签代替`@import`指令，</span><br><span class="line">2. 使用Sass或者Less的CSS预处理器将多个CSS文件编译成一个文件</span><br><span class="line">3. 通过Rails，Jekyll或者其他系统中提供过CSS文件合并功能</span><br><span class="line"></span><br><span class="line">`@import`指令慢很多，也增加了额外的请求次数</span><br><span class="line"></span><br><span class="line">## 选择器顺序</span><br><span class="line">- 大到小</span><br><span class="line">- 低到高</span><br><span class="line">- 先到后</span><br><span class="line">- 父到子</span><br><span class="line"></span><br><span class="line">## 媒体查询的位置</span><br><span class="line">将媒体查询放在相关规则的附近，不要打包在一个单一的样式文件中或者文档底部，避免被遗忘。</span><br><span class="line"></span><br><span class="line">## 带前缀的属性</span><br><span class="line">在使用特定厂商的带有前缀的的属性时，通过缩进的方式，让属性在垂直方向对齐，便于多行编译。例如：</span><br></pre></td></tr></table></figure>
+<p>  .selector {</p>
+<pre><code>-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+        box-shadow:  0 1px 2px rgba(0, 0, 0, .15);
+</code></pre><p>  }</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 单行规则声明</span><br><span class="line">对于只有一条声明的样式，写在一行，多条的声明样式还是写在多行，便于在编译器报错的时方便又及时的的找到出错点，例如：</span><br></pre></td></tr></table></figure>
+<p>  /<em>只有一条声明 </em>/</p>
+<p>  .selctor {width: 20px;}</p>
+<p>  /<em>一条以上的声明 </em>/</p>
+<p>  .selctor {</p>
+<pre><code>width: 20px;
+height: 20px;
+</code></pre><p>  }</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">## 简写属性声明</span><br><span class="line">典型的可简写的声明属性：</span><br><span class="line">1. `padding`</span><br><span class="line">2. `margin`</span><br><span class="line">3. `font`</span><br><span class="line">4. `background`</span><br><span class="line">5. `border`</span><br><span class="line">6. `border-radius`</span><br><span class="line"></span><br><span class="line">在一般的情况下我们不需要全部指定属性的所有值，过度的使用简写形式会导致代码混乱，对属性值带来不必要的覆盖，减少出错。</span><br><span class="line"></span><br><span class="line">#### 不必要的嵌套</span><br><span class="line">避免滥用嵌套，只有在必须将样式限制在父元素内，并且存在多个需要嵌套的元素才使用，例如：</span><br></pre></td></tr></table></figure>
+<p>  /<em> 不必要的嵌套</em>/<br>  .table &gt; thead &gt; tr &gt; th {…}<br>  .table &gt; thead &gt; tr &gt; td {…}</p>
+<p>  /<em>合理地嵌套</em>/<br>  .table &gt; thead &gt;tr {</p>
+<pre><code>&gt; th {...}
+&gt; td {...}
+</code></pre><p>  }</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#### 操作符</span><br><span class="line">圆括号中的计算表达式的数值，变量和操作符之前添加一个空格，提高可读性</span><br><span class="line"></span><br><span class="line">## class命名</span><br><span class="line">- class名称中是能出现小写字符和破折号</span><br><span class="line">- 避免过度的简写，能明确表示意义的</span><br><span class="line">- 尽可能短，而且意义明确</span><br><span class="line">- 使用有组织的或目的明确的名称，不要表现形式的名称</span><br><span class="line">- 使用最近的父class来作为新的class的前缀</span><br><span class="line">- 使用`.js-*`class来表示行为（于样式相对），不将这些class包含到CSS文件中。</span><br><span class="line"></span><br><span class="line">## 选择器</span><br><span class="line">- 选择器与`&#123;`之间要有空格。</span><br><span class="line">- 一个规则有多个选择器的时，每个选择器必须单独占一行,例如：</span><br></pre></td></tr></table></figure>
+<p>  .post,<br>  .page,<br>  .comment {</p>
+<pre><code>line-height: 1.5;
+</code></pre><p>  }</p>
+<p>  /<em>不推荐</em>/<br>  .post, .page, .comment {</p>
+<pre><code>line-height: 1.5;
+</code></pre><p>  }</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- `&gt;`,`+`,`~`选择器的两边个保留一个空格[强制]。</span><br><span class="line">- 属性选择其中的值必须使用双引号包围，不允许使用单引号 `&apos;` 和引号`&quot;`。</span><br><span class="line">- 若没有必要，不再为`id`,`class`选择器进行限定。\--性能和维护性上，一定的影响，例如：</span><br></pre></td></tr></table></figure>
+<p>  /<em>good</em>/<br>  #error,<br>  .danger-message {</p>
+<pre><code>font-color: #fff;
+</code></pre><p>  }</p>
+<p>  /<em>bad</em>/<br>  dialog#error,<br>  p.danger-message {</p>
+<pre><code>font-color: #fff;
+</code></pre><p>  }</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- 对于通用元素使用的class，利于优化。</span><br><span class="line">- 经常出现的组件，避免使用属性选择器，性能受到影响。</span><br><span class="line">- 选择器尽量短小精悍，限制组成选择器的元素个数不要超过 **3**。</span><br><span class="line">- **只有**必要的时候，才将class限制在最近的父元素内（后代选择器）\--采用class前缀。</span><br><span class="line"></span><br><span class="line">## 变换与动画</span><br><span class="line">- 使用`transition`时应指定`transition-porperty`。</span><br></pre></td></tr></table></figure>
+<p>  /<em>推荐</em>/<br>  .box {</p>
+<pre><code>transition: color 1s, border-color 1s;
+</code></pre><p>  }</p>
+<p>  /<em>不推荐</em>/<br>  .box {</p>
+<pre><code>transition: all 1s;
+</code></pre><p>  }</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- 尽可能的在浏览器能高效实现的属性上添加过渡和动画。</span><br><span class="line">    可能的情况下选择下面四种变换：</span><br><span class="line">    - `transform: translate(npx, npx);`</span><br><span class="line">    - `transform: scale(n);`</span><br><span class="line">    - `transform: rotat(ndeg);`</span><br><span class="line">    - `opacity: 0..1;`</span><br><span class="line">    </span><br><span class="line">        可以用translate来代替left作为动画属性。</span><br><span class="line">## 响应式</span><br><span class="line">1. `Media Query`不能单独把编排，必须与相关的规则一起定义。</span><br></pre></td></tr></table></figure>
+<p>  /<em> Good</em>/<br>  /<em> header style</em>/<br>  @media (…) {</p>
+<pre><code>/* header style*/
+</code></pre><p>  }</p>
+<p>  /<em> main style</em>/<br>  @media (…) {</p>
+<pre><code>/* main style*/
+</code></pre><p>  }</p>
+<p>  /<em> footer style</em>/<br>  @media (…) {</p>
+<pre><code>/* footer style*/
+</code></pre><p>  }</p>
+<p>  /<em>Bad</em>/</p>
+<p>  /<em> header style</em>/<br>  /<em> main style</em>/<br>  /<em> footer style</em>/</p>
+<p>  @media (…) {</p>
+<pre><code>/* header style*/
+/* main style*/
+/* footer style*/
+</code></pre><p>  }</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2. `Media Query`有多个逗号分隔的条件时，应每个条件单独一行；</span><br><span class="line">## Hack</span><br><span class="line">尽量使用`选择器 hack`处理兼容性，而并不是`属性 hack`</span><br></pre></td></tr></table></figure>
+<p>  /<em>IE 7</em>/<br>  *:first-child + html #header {</p>
+<pre><code>margin-top: 3px;
+padding: 5px;
+</code></pre><p>  }</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">尽量使用简单的`属性 hack`</span><br></pre></td></tr></table></figure>
+<p>  .box {</p>
+<pre><code>_deisplay: inline:
+float: left;
+margin-left: 20px;
+*zoom: 1; 
+</code></pre><p>  }</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 代码组织</span><br><span class="line">- 以组件为单位组织代码段。</span><br><span class="line">- 制定注释规范。</span><br><span class="line">- 使用一致的空白符将代码分割成块儿，利于扫描大的文档。</span><br><span class="line">- 使用了多个CSS文件，将其按照组件的形式分拆，而不用页面的形式，因为页面会重组，但是组件只会移动。</span><br><span class="line"></span><br><span class="line">## 编译器配置</span><br><span class="line">- 是两个空格代替tab字符。</span><br><span class="line">- 保存文件的时，删除尾部空白符。</span><br><span class="line">- 编码设置为utf-8.</span><br><span class="line">- 在文件结尾添加一个空白行。</span><br><span class="line"></span><br><span class="line">## 导致预想不同的css</span><br><span class="line">1. 在使用flex布局的时候，父布局不能固定宽度，否则子元素占比失效</span><br></pre></td></tr></table></figure>
+<p>  .index {<br>  display: flex;<br>  //   width: 1200px;<br>  .left {</p>
+<pre><code>flex-grow: 1;
+</code></pre><p>  }<br>  .right {</p>
+<pre><code>flex-grow: 5;
+</code></pre><p>  }<br>  }<br>  <code>`</code></p>
+</li>
+</ul>
+<ol start="2">
+<li>border-radius: <code>左上角水平圆角半径大小 右上角水平圆角半径大小 右下角水平圆角半径大小 左下角水平圆角半径大小/左上角垂直圆角半径大小 右上角垂直圆角半径大小 右下角垂直圆角半径大小 左下角垂直圆角半径大小;</code></li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/15/初识MackDown/" rel="next" title="初识MackDown">
+                <i class="fa fa-chevron-left"></i> 初识MackDown
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/15/关于meta/" rel="prev" title="关于meta">
+                关于meta <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">sandianshui</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一些约定语法"><span class="nav-number">1.</span> <span class="nav-text">一些约定语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字体"><span class="nav-number">2.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#声明顺序"><span class="nav-number">3.</span> <span class="nav-text">声明顺序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#清除浮动"><span class="nav-number">3.1.</span> <span class="nav-text">清除浮动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#z-index"><span class="nav-number">4.</span> <span class="nav-text">z-index</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#url"><span class="nav-number">4.1.</span> <span class="nav-text">url()</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">sandianshui</span>
+
+  
+</div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
