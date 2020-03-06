@@ -79,17 +79,13 @@
 
 
 
-<meta name="description" content="厚积薄发 滴水穿石">
-<meta property="og:type" content="article">
-<meta property="og:title" content="积累">
-<meta property="og:url" content="http://yoursite.com/2019/10/31/积累/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="三点水">
+<meta property="og:url" content="http://yoursite.com/archives/2020/02/index.html">
 <meta property="og:site_name" content="三点水">
-<meta property="og:description" content="厚积薄发 滴水穿石">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-31T14:52:42.685Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="积累">
-<meta name="twitter:description" content="厚积薄发 滴水穿石">
+<meta name="twitter:title" content="三点水">
 
 
 
@@ -119,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/10/31/积累/">
+  <link rel="canonical" href="http://yoursite.com/archives/2020/02/">
 
 
 
 
 
-  <title>积累 | 三点水</title>
+  <title>归档 | 三点水</title>
   
 
 
@@ -144,7 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -228,148 +224,72 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-  
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 7 篇日志。 继续努力。
+      </span>
 
-  
-  
-  
+      
+
+        
+        
+        
+
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2020">2020</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/31/积累/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="sandianshui">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="三点水">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">积累</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2020/02/27/http中的记录/" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">storage</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-31T22:08:30+08:00">
-                2019-10-31
-              </time>
-            
+            </a>
+        
+      </h2>
 
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2020-02-27T09:52:40+08:00" content="2020-02-27">
+          02-27
+        </time>
+      </div>
 
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>厚积薄发 滴水穿石<br><a id="more"></a></p>
-<h3 id="scp命令-scp2插件"><a href="#scp命令-scp2插件" class="headerlink" title="scp命令 scp2插件"></a>scp命令 scp2插件</h3><p>scp2 是webpack插件 用于前端打包后自动上传服务器</p>
-<p><code>scp</code> 是 Linux 系统下基于 ssh 登陆进行安全的远程文件拷贝命令<br><code>rcp</code> 是不加密的，scp 是 rcp 的加强版</p>
-<p>常用命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">scp &lt;option 可选参数&gt; 源文件路径 &lt;用户名&gt;@&lt;远程地址&gt;:目标路径</span><br><span class="line"></span><br><span class="line">// node scp2 打包上传</span><br><span class="line"></span><br><span class="line">const client = require(&apos;scp2&apos;)</span><br><span class="line">client.scp(本地目录, `$&#123;远程用户名&#125;:$&#123;密码&#125;@$&#123;ip&#125;&#125;:$&#123;远程目录&#125;`, err =&gt; &#123;</span><br><span class="line">  if (err) &#123;</span><br><span class="line">    console.error(`error: $&#123;err&#125;`)</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">    console.log(&apos;release success&apos;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/05/15/storage/" rel="next" title="storage">
-                <i class="fa fa-chevron-left"></i> storage
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/27/http中的记录/" rel="prev" title="storage">
-                storage <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
 
-    <div class="post-spread">
       
+
     </div>
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -377,10 +297,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -401,17 +317,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -453,22 +360,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#scp命令-scp2插件"><span class="nav-number">1.</span> <span class="nav-text">scp命令 scp2插件</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -597,10 +488,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
