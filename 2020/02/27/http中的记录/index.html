@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="三点水">
 <meta property="og:description" content="记录一些笔记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-06T02:58:44.688Z">
+<meta property="og:updated_time" content="2020-03-06T03:01:28.607Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="http">
 <meta name="twitter:description" content="记录一些笔记">
@@ -313,7 +313,7 @@
 <a id="more"></a>
 <h4 id="Post-和-Get-的区别"><a href="#Post-和-Get-的区别" class="headerlink" title="Post 和 Get 的区别"></a>Post 和 Get 的区别</h4><h5 id="先引入副作用和幂等的概念。"><a href="#先引入副作用和幂等的概念。" class="headerlink" title="先引入副作用和幂等的概念。"></a>先引入副作用和幂等的概念。</h5><p>副作用指对服务器上的资源做改变，搜索是无副作用的，注册是副作用的。<br>幂等指发送 M 和 N 次请求（两者不相同且都大于1），服务器上资源的状态一致。注册10个和11个帐号是不幂等的，对文章进行更改10次和11次是幂等的。<br>在规范的应用场景上说，Get 多用于无副作用，幂等的场景，例如搜索关键字。Post 多用于副作用，不幂等的场景，例如注册。</p>
 <h5 id="在技术上说："><a href="#在技术上说：" class="headerlink" title="在技术上说："></a>在技术上说：</h5><p>Get 请求能缓存，Post 不能<br>Post 相对 Get 安全一点点，因为Get 请求都包含在 URL 里，且会被浏览器保存历史纪录，Post 不会，但是在抓包的情况下都是一样的。<br>Post 可以通过 request body来传输比 Get 更多的数据，Get 没有这个技术<br>URL有长度限制，会影响 Get 请求，但是这个长度限制是浏览器规定的，不是 RFC 规定的<br>Post 支持更多的编码类型且不对数据类型限制</p>
-<p><a href="https://juejin.im/post/5872309261ff4b005c4580d4" target="_blank" rel="noopener">记录链接：</a></p>
+<p><a href="https://juejin.im/post/5872309261ff4b005c4580d4" target="_blank" rel="noopener">记录链接</a></p>
 
       
     </div>
